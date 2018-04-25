@@ -1,0 +1,89 @@
+#spring:
+#    datasource:
+#        type: com.alibaba.druid.pool.DruidDataSource
+#        driverClassName: com.mysql.jdbc.Driver
+#        url: jdbc:mysql://localhost:3306/vueblog2?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+#        username: root
+#        password: root
+#        druid:
+##            first:  #数据源1
+##                url: jdbc:mysql://localhost:3306/vueblog2?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+##                username: root
+##                password: root
+##            second:  #数据源2
+##                url: jdbc:mysql://localhost:3306/vueblog2?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+##                username: root
+##                password: root
+#            initial-size: 10
+#            max-active: 100
+#            min-idle: 10
+#            max-wait: 60000
+#            pool-prepared-statements: true
+#            max-pool-prepared-statement-per-connection-size: 20
+#            time-between-eviction-runs-millis: 60000
+#            min-evictable-idle-time-millis: 300000
+#            validation-query: SELECT 1 FROM DUAL
+#            test-while-idle: true
+#            test-on-borrow: false
+#            test-on-return: false
+#            stat-view-servlet:
+#                enabled: true
+#                url-pattern: /druid/*
+#                #login-username: admin
+#                #login-password: admin
+#            filter:
+#                stat:
+#                    log-slow-sql: true
+#                    slow-sql-millis: 1000
+#                    merge-sql: true
+#                wall:
+#                    config:
+#                        multi-statement-allow: true
+#globalConfig1:
+#    #主键类型  0:"数据库ID自增", 1:"用户输入ID",2:"全局唯一ID (数字类型唯一ID)", 3:"全局唯一ID UUID";
+#  idType: 0
+#    #字段策略 0:"忽略判断",1:"非 NULL 判断"),2:"非空判断"
+#  fieldStrategy: 2
+#    #驼峰下划线转换
+#  dbColumnUnderline: true
+#    #刷新mapper 调试神器
+#  refreshMapper: true
+druid:
+    url: jdbc:mysql://localhost:3306/xbin_store?characterEncoding=utf-8
+    driver-class: com.mysql.jdbc.Driver
+    username: root
+    password: OZo+t9QET+ctzd5Esn9q0GJP5hXtWWIKEsX8c4/w6z4C4AnxrwpvySNgBS89XdazOavjXXZp0oeZtQ3P9lLGEA==
+    initial-size: 1
+    min-idle: 1
+    max-active: 20
+    test-on-borrow: true
+    max-wait: 60000
+    time-between-eviction-runs-millis: 60000
+    min-evictable-idle-time-millis: 300000
+    validation-query: SELECT 1 FROM DUAL
+    test-While-Idle: true
+    test-on-return: false
+    pool-prepared-statements: false
+    max-pool-prepared-statement-per-connection-size: 20
+    filters: stat,wall,log4j,config
+    connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000;config.decrypt=true
+    monitor:
+          enabled: false
+          druid-stat-view: /druid/*
+          druid-web-stat-filter: /*
+          allow: 219.230.50.107,127.0.0.1
+          deny: 192.168.1.73
+          login-username: admin
+          login-password: 123456
+          exclusions: '*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*'
+          reset-enable: false
+mybatis:
+    type-aliases-package: cn.binux.pojo
+    mapper-locations: classpath:mapper/*.xml
+
+
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
