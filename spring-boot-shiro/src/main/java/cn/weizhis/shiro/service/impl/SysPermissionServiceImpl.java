@@ -1,5 +1,6 @@
 package cn.weizhis.shiro.service.impl;
 
+import cn.weizhis.shiro.dao.SysPermissionDao;
 import cn.weizhis.shiro.repository.SysPermissionRepository;
 import com.alibaba.fastjson.JSONObject;
 import cn.weizhis.shiro.entity.SysPermission;
@@ -7,6 +8,7 @@ import cn.weizhis.shiro.service.SysPermissionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -16,29 +18,23 @@ import java.util.List;
 public class SysPermissionServiceImpl implements SysPermissionService {
 
     @Autowired
-    SysPermissionRepository permissionRepository;
+    private SysPermissionDao permissionDao;
+
     @Override
-    public JSONObject getPermissionById(String pId) {
-        return null;
+    public SysPermission getPermissionsById(SysPermission permission) {
+        SysPermission result = permissionDao.selectOne(permission);
+        return result;
     }
 
     @Override
-    public JSONObject getPermissionByIds(List<String> pIds) {
-        return null;
+    public List<SysPermission> getPermissionByIds(List<Long> pIds) {
+        List<SysPermission> result = new ArrayList<>();
+        for (Long id : pIds) {
+            SysPermission permission = new SysPermission();
+            permission.setId(id);
+            result.add(permissionDao.selectOne(permission));
+        }
+        return result;
     }
 
-    @Override
-    public Integer createPermission(SysPermission permission) {
-        return null;
-    }
-
-    @Override
-    public Integer updatePermission(SysPermission permission) {
-        return null;
-    }
-
-    @Override
-    public Integer deletePermission(SysPermission permission) {
-        return null;
-    }
 }

@@ -1,23 +1,49 @@
 package cn.weizhis.shiro.service;
 
-import com.alibaba.fastjson.JSONObject;
+import cn.weizhis.common.component.Page;
 import cn.weizhis.shiro.entity.UserInfo;
-import org.springframework.data.domain.Page;
+import cn.weizhis.shiro.entity.UserRole;
+
+import java.util.List;
 
 /**
  * Created by minlee on 2018/3/11.
  */
 public interface UserInfoService {
-    JSONObject getUserInfoById(String userId);
 
-    UserInfo getUserInfoByName(String userName);
+    /**
+     * 根据用户ID查询用户信息
+     * @param paramter
+     * @return
+     */
+    UserInfo getUserInfoById(UserInfo paramter);
 
-    Page<JSONObject> pageQueryUser();
+    /**
+     * 根据用户名查询用户信息
+     * @param paramter
+     * @return
+     */
+    UserInfo getUserInfoByName(UserInfo paramter);
 
-    Integer createUser(UserInfo userInfo);
+    /**
+     * 分页查询用户信息
+     * @param page
+     * @return
+     */
+    Page<UserInfo> pageQueryUser(Page page);
 
-    Integer updateUser(UserInfo userInfo);
+    /**
+     * 通过用户名查询用户角色信息
+     * @param paramter
+     * @return
+     */
+    List<UserRole> getUserRoleByUserName(UserInfo paramter);
 
-    Integer deleteUser(UserInfo userInfo);
+    /**
+     * 通过用户ID查询用户角色信息
+     * @param paramter
+     * @return
+     */
+    List<UserRole> getUserRoleById(UserInfo paramter);
 
 }

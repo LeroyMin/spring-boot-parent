@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.weizhis.shiro.dao.UserInfoDao">
+    <select id="selectOne" parameterType="cn.weizhis.shiro.UserInfo" resultType="cn.weizhis.shiro.UserInfo">
+        select * from sys_user where id=#{id}
+    </select>
+    
+    <select id="selectUserByName" parameterType="cn.weizhis.shiro.UserInfo" resultType="cn.weizhis.shiro.UserInfo">
+        select * from sys_user where name=#{name}
+    </select>
+
+    <select id="selectAllByPage" parameterType="cn.weizhis.common.component.Page" resultType="cn.weizhis.common.component.Page">
+        select * from sys_user limit #{currentPage-1},#{rowNum}
+    </select>
+
+    <insert id="insert" parameterType="cn.weizhis.shiro.UserInfo">
+        insert into sys_user (name,password,salt,state,user_name) values (#{name},#{password},#{salt},#{state},#{user_name})
+    </insert>
+
+    <update id="update" parameterType="cn.weizhis.shiro.UserInfo">
+        update sys_user set name = #{name},passwords = #{passwords},salt = #{salt},state=#{state},user_name=#{user_name}
+        where id=#{id}
+    </update>
+
+    <delete id="delete" parameterType="cn.weizhis.shiro.UserInfo">
+        delete sys_user where id = #{id}
+    </delete>
+</mapper>

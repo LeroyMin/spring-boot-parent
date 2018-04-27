@@ -1,6 +1,5 @@
 package cn.weizhis.shiro.service;
 
-import com.alibaba.fastjson.JSONObject;
 import cn.weizhis.shiro.entity.SysPermission;
 
 import java.util.List;
@@ -11,19 +10,13 @@ import java.util.List;
 public interface SysPermissionService {
 
     /**
-     * 通过资源ID获取资源信息
+     * 通过资源ID获取所有资源信息
      */
-    JSONObject getPermissionById(String pId);
+    SysPermission getPermissionsById(SysPermission permission);
 
     /**
      * 通过资源ID集合获取资源信息
      */
-    JSONObject getPermissionByIds(List<String> pIds);
-
-    Integer createPermission(SysPermission permission);
-
-    Integer updatePermission(SysPermission permission);
-
-    Integer deletePermission(SysPermission permission);
+    List<SysPermission> getPermissionByIds(List<Long> pIds);
 
 }

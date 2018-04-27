@@ -1,63 +1,58 @@
 package cn.weizhis.shiro.entity;
 
-import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Set;
-
 /**
  * Created by minlee on 2018/3/11.
  */
-@Entity
-@Table(name = "tb_sys_permission")
 public class SysPermission {
-    @Id
-    @Column(name = "ID", length = 50)
-    private String id;
 
-    @Version
-    @Column(name = "version", length = 5)
-    private Integer version;
+    /**
+     * 自增主键
+     */
+    private Long id;
 
-    @Column(name = "name", length = 15)
+    /**
+     *
+     * 权限名称
+     */
     private String name;
 
-    @Column(name = "parent_id", length = 50)
+    /**
+     * 上级ID
+     */
     private Long parentId;
 
-    @Column(name = "parent_ids", length = 50)
+    /**
+     * 上级ID集合
+     */
     private String parentIds;
 
-    @Column(name = "permission", length = 15)
+    /**
+     * 权限值
+     */
     private String permission;
 
-    @Column(name = "resource_type", length = 10)
+    /**
+     *
+     * 类型
+     */
     private String resourceType;
 
-    @Column(name = "url", length = 50)
+    /**
+     * 菜单地址
+     */
     private String url;
 
-    @Column(name = "available")
+    /**
+     * 是否可见
+     */
     private Boolean available;
 
-    @ManyToMany
-    @JoinTable(name = "t_permission_role",joinColumns = @JoinColumn(name = "permission_id"),
-        inverseJoinColumns = @JoinColumn(name = "role_id"))
-    private Set<SysRole> roles = new HashSet<>();
-
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
-    }
-
-    public Integer getVersion() {
-        return version;
-    }
-
-    public void setVersion(Integer version) {
-        this.version = version;
     }
 
     public String getName() {
@@ -114,13 +109,5 @@ public class SysPermission {
 
     public void setAvailable(Boolean available) {
         this.available = available;
-    }
-
-    public Set<SysRole> getRoles() {
-        return roles;
-    }
-
-    public void setRoles(Set<SysRole> roles) {
-        this.roles = roles;
     }
 }

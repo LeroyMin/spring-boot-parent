@@ -1,7 +1,9 @@
 package cn.weizhis.shiro.service.impl;
 
+import cn.weizhis.shiro.dao.SysRoleDao;
 import cn.weizhis.shiro.repository.SysRoleRepository;
 import cn.weizhis.shiro.repository.UserInfoRepository;
+import cn.weizhis.shiro.service.SysPermissionService;
 import com.alibaba.fastjson.JSONObject;
 import cn.weizhis.shiro.entity.SysRole;
 import cn.weizhis.shiro.entity.UserInfo;
@@ -17,10 +19,10 @@ import java.util.List;
 @Service
 public class SysRoleServiceImpl implements SysRoleService{
     @Autowired
-    UserInfoRepository userInfoRepository;
+    SysPermissionService permissionService;
 
     @Autowired
-    SysRoleRepository roleRepository;
+    SysRoleDao sysRoleDao;
 
     @Override
     public JSONObject getRoleById(String roleId) {
@@ -39,11 +41,7 @@ public class SysRoleServiceImpl implements SysRoleService{
 
     @Override
     public List<SysRole> queryRolesByUser(UserInfo userInfo) {
-        if (userInfo == null) {
-            throw new IllegalArgumentException("null user Info");
-        }
-        UserInfo userRes = userInfoRepository.findOne(userInfo.getId());
-        return userRes.getRoles();
+      return null;
     }
 
     @Override

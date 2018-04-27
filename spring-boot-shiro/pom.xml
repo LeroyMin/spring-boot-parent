@@ -18,6 +18,11 @@
             <artifactId>shiro-redis</artifactId>
             <version>${shiro-redis.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.weizhis</groupId>
+            <artifactId>spring-boot-common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
