@@ -14,6 +14,12 @@ public interface SysPermissionService {
      */
     SysPermission getPermissionsById(SysPermission permission);
 
+
+    /**
+     * 通过资源ID获取所有资源信息
+     */
+    SysPermission getPermissionsById(Long permissionId);
+
     /**
      * 通过资源ID集合获取资源信息
      */
