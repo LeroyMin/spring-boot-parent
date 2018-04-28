@@ -2,7 +2,6 @@ package cn.weizhis.shiro.config;
 
 import cn.weizhis.shiro.entity.RolePermission;
 import cn.weizhis.shiro.entity.SysPermission;
-import cn.weizhis.shiro.entity.SysRole;
 import cn.weizhis.shiro.entity.UserInfo;
 import cn.weizhis.shiro.entity.UserRole;
 import cn.weizhis.shiro.service.SysPermissionService;
