@@ -1,13 +1,13 @@
 package cn.weizhis.shiro.service.impl;
 
 import cn.weizhis.shiro.dao.SysRoleDao;
-import cn.weizhis.shiro.repository.SysRoleRepository;
-import cn.weizhis.shiro.repository.UserInfoRepository;
-import cn.weizhis.shiro.service.SysPermissionService;
-import com.alibaba.fastjson.JSONObject;
+import cn.weizhis.shiro.entity.RolePermission;
 import cn.weizhis.shiro.entity.SysRole;
 import cn.weizhis.shiro.entity.UserInfo;
+import cn.weizhis.shiro.entity.UserRole;
+import cn.weizhis.shiro.service.SysPermissionService;
 import cn.weizhis.shiro.service.SysRoleService;
+import com.alibaba.fastjson.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -45,17 +45,7 @@ public class SysRoleServiceImpl implements SysRoleService{
     }
 
     @Override
-    public Integer createRole(SysRole role) {
-        return null;
-    }
-
-    @Override
-    public Integer updateRole(SysRole role) {
-        return null;
-    }
-
-    @Override
-    public Integer deleteRole(SysRole role) {
+    public List<RolePermission> getPermissionsByRole(UserRole role) {
         return null;
     }
 }

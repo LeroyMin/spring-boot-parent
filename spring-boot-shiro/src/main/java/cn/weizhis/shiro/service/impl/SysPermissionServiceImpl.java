@@ -1,8 +1,6 @@
 package cn.weizhis.shiro.service.impl;
 
 import cn.weizhis.shiro.dao.SysPermissionDao;
-import cn.weizhis.shiro.repository.SysPermissionRepository;
-import com.alibaba.fastjson.JSONObject;
 import cn.weizhis.shiro.entity.SysPermission;
 import cn.weizhis.shiro.service.SysPermissionService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,4 +35,8 @@ public class SysPermissionServiceImpl implements SysPermissionService {
         return result;
     }
 
+    @Override
+    public SysPermission getPermissionsById(Long permissionId) {
+        return null;
+    }
 }
