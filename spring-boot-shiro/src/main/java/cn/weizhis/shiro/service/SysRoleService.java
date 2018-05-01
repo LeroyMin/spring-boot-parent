@@ -1,5 +1,8 @@
 package cn.weizhis.shiro.service;
 
+import cn.weizhis.shiro.entity.RolePermission;
+import cn.weizhis.shiro.entity.SysPermission;
+import cn.weizhis.shiro.entity.UserRole;
 import com.alibaba.fastjson.JSONObject;
 import cn.weizhis.shiro.entity.SysRole;
 import cn.weizhis.shiro.entity.UserInfo;
@@ -37,10 +40,6 @@ public interface SysRoleService {
      */
     List<SysRole> queryRolesByUser(UserInfo userInfo);
 
-    Integer createRole(SysRole role);
-
-    Integer updateRole(SysRole role);
-
-    Integer deleteRole(SysRole role);
+    List<RolePermission> getPermissionsByRole(UserRole role);
 
 }
