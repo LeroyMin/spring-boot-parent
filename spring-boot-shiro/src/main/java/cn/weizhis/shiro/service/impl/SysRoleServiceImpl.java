@@ -1,6 +1,8 @@
 package cn.weizhis.shiro.service.impl;
 
 import cn.weizhis.shiro.dao.SysRoleDao;
+import cn.weizhis.shiro.entity.RolePermission;
+import cn.weizhis.shiro.entity.UserRole;
 import cn.weizhis.shiro.repository.SysRoleRepository;
 import cn.weizhis.shiro.repository.UserInfoRepository;
 import cn.weizhis.shiro.service.SysPermissionService;
@@ -45,17 +47,7 @@ public class SysRoleServiceImpl implements SysRoleService{
     }
 
     @Override
-    public Integer createRole(SysRole role) {
-        return null;
-    }
-
-    @Override
-    public Integer updateRole(SysRole role) {
-        return null;
-    }
-
-    @Override
-    public Integer deleteRole(SysRole role) {
+    public List<RolePermission> getPermissionsByRole(UserRole role) {
         return null;
     }
 }

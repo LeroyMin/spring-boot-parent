@@ -37,4 +37,8 @@ public class SysPermissionServiceImpl implements SysPermissionService {
         return result;
     }
 
+    @Override
+    public SysPermission getPermissionsById(Long permissionId) {
+        return null;
+    }
 }

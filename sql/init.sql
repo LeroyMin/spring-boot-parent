@@ -11,8 +11,8 @@ Target Server Version : 50528
 File Encoding         : 65001  
   
 Date: 2017-09-14 16:41:39  
-*/  
-  
+*/
+
 SET FOREIGN_KEY_CHECKS=0;  
   
 -- ----------------------------  
@@ -41,7 +41,7 @@ INSERT INTO `sys_permission` VALUES ('4', '/*/*/upload',  null, null, 'anon', '�
 INSERT INTO `sys_permission` VALUES ('5', '/admin/content',  null, null, 'admin:content', '首页/系统管理', '0', 1);
 INSERT INTO `sys_permission` VALUES ('6', '/cms/content',  null, null, 'cms:content', '内容管理', '0', 1);
 INSERT INTO `sys_permission` VALUES ('7', '/apps/content',  null, null, 'apps:content', '首页', '0', 1);
-INSERT INTO `sys_permission` VALUES ('8', '/**', 'authc', null, null,  '其他全部拦截', '0', 1);
+INSERT INTO `sys_permission` VALUES ('8', '/**', null, null, 'authc', '其他全部拦截', '0', 1);
 INSERT INTO `sys_permission` VALUES ('9', '/cms/article/add',  null, null, 'article:add', '文章添加', '0', 1);
   
 -- ----------------------------  

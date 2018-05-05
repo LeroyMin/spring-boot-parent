@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89cb7a44-9b94-4e95-bd83-65c7600be7a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-main/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-main/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-main/src/main/java/com/weizhis/SpringBootMainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-main/src/main/java/cn/weizhis/SpringBootMainApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-main/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-main/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-main/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-main/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-main/src/test/java/com/weizhis/SpringBootMainApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-main/src/test/java/cn/weizhis/SpringBootMainApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-module/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/cn/weizhis/shiro/config/MyExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/cn/weizhis/shiro/config/MyExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/cn/weizhis/shiro/config/MySessionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/cn/weizhis/shiro/config/MySessionManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/cn/weizhis/shiro/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/cn/weizhis/shiro/config/ShiroConfig.java" afterDir="false" />
@@ -23,12 +11,9 @@
       <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/cn/weizhis/shiro/repository/SysPermissionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/cn/weizhis/shiro/repository/SysPermissionRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/cn/weizhis/shiro/repository/SysRoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/cn/weizhis/shiro/repository/SysRoleRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/cn/weizhis/shiro/repository/UserInfoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/cn/weizhis/shiro/repository/UserInfoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/cn/weizhis/shiro/service/SysRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/cn/weizhis/shiro/service/SysRoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/RolePermissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/RolePermissionMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/SysPermissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/SysPermissionMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/SysRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/SysRoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/UserInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/UserInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/UserRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/UserRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/cn/weizhis/shiro/service/impl/SysPermissionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/cn/weizhis/shiro/service/impl/SysPermissionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/cn/weizhis/shiro/service/impl/SysRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/cn/weizhis/shiro/service/impl/SysRoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/init.sql" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/spring-boot-main/target/" />
     <ignored path="$PROJECT_DIR$/spring-boot-common/target/" />
@@ -44,20 +29,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="application-dev.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="application-dev.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-boot-main/src/main/resources/application-dev.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+            <state relative-caret-position="114">
+              <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RolePermissionMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/RolePermissionMapper.xml">
+      <file leaf-file-name="SysRoleServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/cn/weizhis/shiro/service/impl/SysRoleServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="9" selection-end-column="17" />
+            <state relative-caret-position="448">
+              <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="20" />
+              <folding>
+                <element signature="e#1326#1327#0" expanded="true" />
+                <element signature="e#1353#1354#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SysPermissionServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/cn/weizhis/shiro/service/impl/SysPermissionServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+              <folding>
+                <element signature="e#1259#1260#0" expanded="true" />
+                <element signature="e#1286#1287#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,20 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SysRoleMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/SysRoleMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" selection-start-line="7" selection-end-line="9" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UserInfoMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/UserInfoMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
-              <caret line="7" column="55" lean-forward="true" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+              <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -128,11 +121,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpringBootMainApplication.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SpringBootMainApplication.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spring-boot-main/src/main/java/cn/weizhis/SpringBootMainApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -200,7 +193,6 @@
         <option value="$PROJECT_DIR$/spring-boot-main/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-common/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-module/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot-main/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/SysRoleMapper.xml" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/RolePermissionMapper.xml" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/SysPermissionMapper.xml" />
@@ -208,8 +200,19 @@
         <option value="$PROJECT_DIR$/spring-boot-main/src/main/java/cn/weizhis/SpringBootMainApplication.java" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/UserRoleMapper.xml" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/UserInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/sql/init.sql" />
+        <option value="$PROJECT_DIR$/spring-boot-main/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/cn/weizhis/shiro/service/impl/SysRoleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/cn/weizhis/shiro/service/impl/SysPermissionServiceImpl.java" />
       </list>
     </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -241,7 +244,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -274,6 +276,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-main" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="weizhis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-parent" type="b2602c69:ProjectViewProjectNode" />
@@ -355,12 +366,18 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="spring-boot-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -490,28 +507,35 @@
       <option name="project" value="LOCAL" />
       <updated>1524756555384</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="modify mapper xml file">
+      <created>1525178050504</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1525178050504</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1044" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info id="DB Browser" />
+      <window_info id="DB Browser" order="2" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32919955" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="DB Execution Console" />
+      <window_info anchor="bottom" id="DB Execution Console" order="7" weight="0.32919955" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.32995737" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32919955" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32919955" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2739872" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2835821" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -520,7 +544,6 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32919955" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -533,44 +556,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="文件目录结构调整" />
     <MESSAGE value="add mapper xml file" />
-    <option name="LAST_COMMIT_MESSAGE" value="add mapper xml file" />
+    <MESSAGE value="modify mapper xml file" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify mapper xml file" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/UserInfoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-module/src/main/resources/mapper/user/UserInfoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-module/src/main/resources/mapper/user/SysRoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="77" selection-start-line="20" selection-start-column="77" selection-end-line="20" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-module/src/main/resources/mapper/user/SysPermissionMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-module/src/main/resources/mapper/user/RolePermissionMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="70" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-module/src/main/java/cn/weizhis/module/user/entity/RolePermission.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -820,13 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-main/src/main/java/cn/weizhis/SpringBootMainApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/UserRoleMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -837,14 +819,70 @@
     <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/UserInfoMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="7" column="55" lean-forward="true" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="db://[Connection]sessions/Connection Sessions">
+      <provider selected="true" editor-type-id="0.SESSION_BROWSER">
+        <state>
+          <refresh-interval value="0" />
+          <sorting />
+          <filter>
+            <user value="minliang" />
+            <host value="" />
+            <status value="" />
+          </filter>
+        </state>
+      </provider>
+    </entry>
+    <entry file="db://[Connection]consoles/Connection">
+      <provider selected="true" editor-type-id="0.CONSOLE">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" current-schema="mysql" session-id="MAIN">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/init.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="43" column="75" lean-forward="true" selection-start-line="43" selection-end-line="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-main/src/main/resources/application-dev.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        <state relative-caret-position="114">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/cn/weizhis/shiro/service/impl/SysRoleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="20" />
+          <folding>
+            <element signature="e#1326#1327#0" expanded="true" />
+            <element signature="e#1353#1354#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/cn/weizhis/shiro/service/impl/SysPermissionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+          <folding>
+            <element signature="e#1259#1260#0" expanded="true" />
+            <element signature="e#1286#1287#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-main/src/main/java/cn/weizhis/SpringBootMainApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
