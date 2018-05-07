@@ -36,10 +36,10 @@ spring:
 #            max-idle: 10      # 连接池中的最大空闲连接
 #            min-idle: 5       # 连接池中的最小空闲连接
 
-# Mybatis配置
-#mybatis:
-#    mapperLocations: org/sang/mapper/*.xml
-#    configLocation: classpath:mybatis-config.xml
+#Mybatis配置
+mybatis:
+  typeAliasesPackage: cn.weizhis.shiro.entity
+  mapperLocations: classpath:mapper/*.xml
 
 renren:
     # APP模块，是通过jwt认证的，如果要使用APP模块，则需要修改【加密秘钥】

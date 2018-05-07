@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.weizhis.module.user.dao.SysPermissionDao">
-    <select id="selectOne" parameterType="cn.weizhis.shiro.SysPermission" resultType="cn.weizhis.shiro.SysPermission">
+    <select id="selectOne" parameterType="cn.weizhis.shiro.entity.SysPermission" resultType="cn.weizhis.shiro.entity.SysPermission">
         select * from user_info where id=#{id}
     </select>
 
-    <select id="selectAll" parameterType="cn.weizhis.shiro.SysPermission" resultSets="cn.weizhis.shiro.SysPermission">
+    <select id="selectAll" parameterType="cn.weizhis.shiro.entity.SysPermission" resultSets="cn.weizhis.shiro.entity.SysPermission">
         select * from user_info
     </select>
 
-    <select id="selectAllByPage" parameterType="cn.weizhis.common.component.Page" resultType="cn.weizhis.common.component.Page">
-        select * from user_info limit #{currentPage-1},#{rowNum}
-    </select>
+    <!--<select id="selectAllByPage" parameterType="cn.weizhis.common.component.Page" resultType="cn.weizhis.common.component.Page">-->
+        <!--select * from user_info limit #{currentPage-1},#{rowNum}-->
+    <!--</select>-->
 
-    <insert id="insert" parameterType="cn.weizhis.shiro.SysPermission">
+    <insert id="insert" parameterType="cn.weizhis.shiro.entity.SysPermission">
         insert into user_info (name,password,salt,state,user_name) values (#{name},#{password},#{salt},#{state},#{user_name})
     </insert>
 
-    <update id="update" parameterType="cn.weizhis.shiro.SysPermission">
+    <update id="update" parameterType="cn.weizhis.shiro.entity.SysPermission">
         update user_info set name = #{name},passwords = #{passwords},salt = #{salt},state=#{state},user_name=#{user_name}
         where id=#{id}
     </update>
 
-    <delete id="delete" parameterType="cn.weizhis.shiro.SysPermission">
+    <delete id="delete" parameterType="cn.weizhis.shiro.entity.SysPermission">
         delete user_info where id = #{id}
     </delete>
 </mapper>

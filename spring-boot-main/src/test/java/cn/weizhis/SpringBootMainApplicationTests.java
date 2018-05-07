@@ -1,4 +1,4 @@
-package com.weizhis;
+package cn.weizhis;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -5,9 +5,9 @@
         select * from tb_role_permission where r_id=#{id}
     </select>
 
-    <select id="selectAllByPage" parameterType="cn.weizhis.common.component.Page" resultType="cn.weizhis.common.component.Page">
-        select * from tb_role_permission limit #{currentPage-1},#{rowNum}
-    </select>
+    <!--<select id="selectAllByPage" parameterType="cn.weizhis.common.component.Page" resultType="cn.weizhis.common.component.Page">-->
+        <!--select * from tb_role_permission limit #{currentPage-1},#{rowNum}-->
+    <!--</select>-->
 
     <insert id="insert" parameterType="cn.weizhis.shiro.entity.SysRole">
         insert into tb_role_permission (name,password,salt,state,user_name) values (#{name},#{password},#{salt},#{state},#{user_name})
