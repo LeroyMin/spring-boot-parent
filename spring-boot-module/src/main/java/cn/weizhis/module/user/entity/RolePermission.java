@@ -1,22 +1,31 @@
 package cn.weizhis.module.user.entity;
 
 public class RolePermission {
-    private Integer rId;
-    private Integer pId;
+    private Long id;
+    private Long rId;
+    private Long pId;
 
-    public Integer getrId() {
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getrId() {
         return rId;
     }
 
-    public void setrId(Integer rId) {
+    public void setrId(Long rId) {
         this.rId = rId;
     }
 
-    public Integer getpId() {
+    public Long getpId() {
         return pId;
     }
 
-    public void setpId(Integer pId) {
+    public void setpId(Long pId) {
         this.pId = pId;
     }
 }

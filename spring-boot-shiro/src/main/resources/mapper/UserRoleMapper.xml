@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.weizhis.shiro.dao.UserRoleDao">
-    <resultMap type="userRole" id="userResult">
-        <id property="user_id" column="USER_ID"/>
-        <result property="login_name" column="LOGIN_NAME"/>
-        <result property="real_name" column="REAL_NAME"/>
-        <result property="password" column="PASSWORD"/>
-    </resultMap>
-    <select id="selectOne" parameterType="userRole" resultType="userRole">
+
+    <select id="selectOne" parameterType="cn.weizhis.shiro.entity.UserRole" resultType="cn.weizhis.shiro.entity.UserRole">
         select * from user_role where id=#{id}
     </select>
 
@@ -19,16 +14,16 @@
         <!--select * from user_role limit #{currentPage-1},#{rowNum}-->
     <!--</select>-->
 
-    <insert id="insert" parameterType="userRole">
+    <insert id="insert" parameterType="cn.weizhis.shiro.entity.UserRole">
         insert into user_role (name,password,salt,state,user_name) values (#{name},#{password},#{salt},#{state},#{user_name})
     </insert>
 
-    <update id="update" parameterType="userRole">
+    <update id="update" parameterType="cn.weizhis.shiro.entity.UserRole">
         update user_role set name = #{name},passwords = #{passwords},salt = #{salt},state=#{state},user_name=#{user_name}
         where id=#{id}
     </update>
 
-    <delete id="delete" parameterType="userRole">
+    <delete id="delete" parameterType="cn.weizhis.shiro.entity.UserRole">
         delete user_role where id = #{id}
     </delete>
 </mapper>

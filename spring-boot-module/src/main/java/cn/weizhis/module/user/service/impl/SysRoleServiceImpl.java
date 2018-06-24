@@ -1,13 +1,13 @@
-package cn.weizhis.shiro.service.impl;
+package cn.weizhis.module.user.service.impl;
 
-import cn.weizhis.shiro.dao.SysRoleDao;
-import cn.weizhis.shiro.entity.RolePermission;
-import cn.weizhis.shiro.entity.UserRole;
-import cn.weizhis.shiro.service.SysPermissionService;
+import cn.weizhis.module.user.dao.SysRoleDao;
+import cn.weizhis.module.user.entity.RolePermission;
+import cn.weizhis.module.user.entity.SysRole;
+import cn.weizhis.module.user.entity.UserInfo;
+import cn.weizhis.module.user.entity.UserRole;
+import cn.weizhis.module.user.service.SysPermissionService;
+import cn.weizhis.module.user.service.SysRoleService;
 import com.alibaba.fastjson.JSONObject;
-import cn.weizhis.shiro.entity.SysRole;
-import cn.weizhis.shiro.entity.UserInfo;
-import cn.weizhis.shiro.service.SysRoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,7 +17,7 @@ import java.util.List;
  * Created by minlee on 2018/3/11.
  */
 @Service
-public class SysRoleServiceImpl implements SysRoleService{
+public class SysRoleServiceImpl implements SysRoleService {
     @Autowired
     SysPermissionService permissionService;
 

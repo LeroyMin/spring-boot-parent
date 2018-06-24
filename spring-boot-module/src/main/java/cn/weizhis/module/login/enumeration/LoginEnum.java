@@ -1,7 +1,5 @@
 package cn.weizhis.module.login.enumeration;
 
-import lombok.Getter;
-
 /**
  * Created by minlee on 2018/4/7.
  */
@@ -19,6 +17,14 @@ public enum LoginEnum {
         this.loginCode = loginCode;
         this.msg = msg;
     }
-    @Getter private Integer loginCode;
-    @Getter private String msg;
+    private Integer loginCode;
+    private String msg;
+
+    public Integer getLoginCode() {
+        return loginCode;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cn.weizhis.shiro.dao.UserInfoDao">
+<mapper namespace="cn.weizhis.shiro.dao.RolePermissionDao">
     <select id="selectAll" parameterType="cn.weizhis.shiro.entity.SysRole" resultSets="cn.weizhis.shiro.entity.RolePermission">
         select * from tb_role_permission where r_id=#{id}
     </select>

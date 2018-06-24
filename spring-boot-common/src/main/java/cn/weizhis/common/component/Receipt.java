@@ -36,4 +36,20 @@ public class Receipt<T> {
     public Receipt success(){
         return this;
     }
+
+    public T getData() {
+        return data;
+    }
+
+    public Integer getCode() {
+        return code;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public Boolean getSuccess() {
+        return success;
+    }
 }

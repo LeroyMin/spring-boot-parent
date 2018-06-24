@@ -1,10 +1,10 @@
 package cn.weizhis.module.login.service;
 
-import cn.weizhis.module.login.dto.UserInfoDTO;
+import cn.weizhis.module.user.entity.UserInfo;
 
 /**
  * Created by minlee on 2018/4/7.
  */
 public interface RegisterService {
-    Integer register(UserInfoDTO userInfoDTO);
+    Integer register(UserInfo userInfo);
 }

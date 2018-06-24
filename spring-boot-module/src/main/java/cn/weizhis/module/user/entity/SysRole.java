@@ -1,60 +1,66 @@
 package cn.weizhis.module.user.entity;
 
-import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.Date;
 
 /**
  * Created by minlee on 2018/3/11.
  */
-@Entity
-@Table(name = "tb_sys_role")
 public class SysRole {
-    @Id
-    @Column(name = "ID", length = 50)
-    private String id;
 
-    @Version
-    @Column(name = "version", length = 5)
-    private Integer version;
+    private Long id;
 
-    @Column(name = "desc", length = 32)
-    private String desc;
+    private String creator;
 
-    @Column(name = "role_name", length = 15)
+    private Date create_date;
+
+    private String updater;
+
+    private Date update_date;
+
     private String roleName;
 
-    @Column(name = "available")
     private Boolean available;
 
-    @ManyToMany(mappedBy = "roles")
-    private Set<UserInfo> userInfos = new HashSet<>();
+    private String desc;
 
-    @ManyToMany(mappedBy = "roles")
-    private Set<SysPermission> permissions = new HashSet<>();
-
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public Integer getVersion() {
-        return version;
+    public String getCreator() {
+        return creator;
     }
 
-    public void setVersion(Integer version) {
-        this.version = version;
+    public void setCreator(String creator) {
+        this.creator = creator;
     }
 
-    public String getDesc() {
-        return desc;
+    public Date getCreate_date() {
+        return create_date;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
+    public void setCreate_date(Date create_date) {
+        this.create_date = create_date;
+    }
+
+    public String getUpdater() {
+        return updater;
+    }
+
+    public void setUpdater(String updater) {
+        this.updater = updater;
+    }
+
+    public Date getUpdate_date() {
+        return update_date;
+    }
+
+    public void setUpdate_date(Date update_date) {
+        this.update_date = update_date;
     }
 
     public String getRoleName() {
@@ -73,19 +79,11 @@ public class SysRole {
         this.available = available;
     }
 
-    public Set<UserInfo> getUserInfos() {
-        return userInfos;
+    public String getDesc() {
+        return desc;
     }
 
-    public void setUserInfos(Set<UserInfo> userInfos) {
-        this.userInfos = userInfos;
-    }
-
-    public Set<SysPermission> getPermissions() {
-        return permissions;
-    }
-
-    public void setPermissions(Set<SysPermission> permissions) {
-        this.permissions = permissions;
+    public void setDesc(String desc) {
+        this.desc = desc;
     }
 }

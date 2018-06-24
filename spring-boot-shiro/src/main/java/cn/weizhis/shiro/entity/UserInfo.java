@@ -1,9 +1,6 @@
 package cn.weizhis.shiro.entity;
 
-import javax.persistence.*;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 /**
  * Created by minlee on 2018/3/11.

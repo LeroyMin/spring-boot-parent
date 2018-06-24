@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cn.weizhis.module.user.dao.UserInfoDao">
+<mapper namespace="cn.weizhis.module.user.dao.RolePermissionDao">
     <select id="selectAll" parameterType="cn.weizhis.module.user.entity.SysRole" resultSets="cn.weizhis.module.user.entity.RolePermission">
         select * from tb_role_permission where r_id=#{id}
     </select>
 
-    <select id="selectAllByPage" parameterType="cn.weizhis.common.component.Page" resultType="cn.weizhis.common.component.Page">
-        select * from tb_role_permission limit #{currentPage-1},#{rowNum}
-    </select>
+    <!--<select id="selectAllByPage" parameterType="cn.weizhis.common.component.Page" resultType="cn.weizhis.common.component.Page">-->
+        <!--select * from tb_role_permission limit #{currentPage-1},#{rowNum}-->
+    <!--</select>-->
 
     <insert id="insert" parameterType="cn.weizhis.module.user.entity.SysRole">
         insert into tb_role_permission (name,password,salt,state,user_name) values (#{name},#{password},#{salt},#{state},#{user_name})
