@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * Created by minlee on 2018/3/11.
  */
-@Service
+//@Service
 public class SysRoleServiceImpl implements SysRoleService {
     @Autowired
     SysPermissionService permissionService;

@@ -2,9 +2,9 @@ spring:
     datasource:
         type: com.alibaba.druid.pool.DruidDataSource
         driverClassName: com.mysql.jdbc.Driver
-        url: jdbc:mysql://localhost:3306/mysql?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
-        username: minliang
-        password: passwords
+        url: jdbc:mysql://localhost:3306/spring_boot?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password: minliang
         druid:
 #            first:  #数据源1
 #                url: jdbc:mysql://localhost:3306/mysql?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8

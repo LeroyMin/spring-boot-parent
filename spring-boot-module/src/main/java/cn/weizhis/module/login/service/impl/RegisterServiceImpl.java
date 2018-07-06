@@ -1,5 +1,7 @@
 package cn.weizhis.module.login.service.impl;
 
+import cn.weizhis.common.utils.BeanUtils;
+import cn.weizhis.module.login.dto.UserInfoDTO;
 import cn.weizhis.module.login.service.RegisterService;
 import cn.weizhis.module.user.entity.UserInfo;
 import cn.weizhis.module.user.service.SysPermissionService;
@@ -24,7 +26,8 @@ public class RegisterServiceImpl implements RegisterService {
     private SysPermissionService permissionService;
 
     @Override
-    public Integer register(UserInfo userInfo) {
+    public Integer register(UserInfoDTO userInfoDTO) {
+        UserInfo userInfo = (UserInfo) BeanUtils.convertBean(userInfoDTO, UserInfo.class);
         userInfoService.addUser(userInfo);
         return null;
     }

@@ -3,7 +3,7 @@ package cn.weizhis.common.exception;
 /**
  * Created by minlee on 2018/4/15.
  */
-public class BizzException extends Exception {
+public class BizzException extends RuntimeException {
 
     private Integer errCode;
 

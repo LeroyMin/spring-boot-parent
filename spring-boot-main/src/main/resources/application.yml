@@ -6,7 +6,7 @@ server:
         min-spare-threads: 30
     port: 8082
     connection-timeout: 5000
-#    context-path: /renren-fast
+    context-path: /weizhis
 
 spring:
     # 环境 dev|test|pro

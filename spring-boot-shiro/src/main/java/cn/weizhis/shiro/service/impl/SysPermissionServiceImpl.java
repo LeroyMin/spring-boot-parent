@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * Created by minlee on 2018/4/6.
  */
-@Service
+@Service("sysPermissionService")
 public class SysPermissionServiceImpl implements SysPermissionService {
 
     @Autowired

@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * Created by minlee on 2018/4/6.
  */
-@Service
+@Service("userInfoService")
 public class UserInfoServiceImpl implements UserInfoService {
 
     @Autowired

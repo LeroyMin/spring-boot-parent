@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("cn.weizhis.shiro.dao")
+@MapperScan({"cn.weizhis.shiro.dao","cn.weizhis.module.*.dao"})
 public class SpringBootMainApplication {
 
 	public static void main(String[] args) {
